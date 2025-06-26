@@ -20,6 +20,6 @@ A desktop application built using Python, Tkinter, and MySQL to manage medicines
 ## 📦 How to Run
 1. Clone the repo
 2. Install dependencies: pandas , matplotlib , tkcalendar , reportlab , mysql-connector-python
-3. Set Database credentials in 'config.py'
+3. Rename "config_sample.py" to "config.py" and fill in your own database credentials in "config.py"
 4. Run the app : 'main.py' 
 
