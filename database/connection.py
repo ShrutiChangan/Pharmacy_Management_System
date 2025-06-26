@@ -7,7 +7,7 @@ from tkinter import messagebox
 class DatabaseConnection:
     def __init__(self):
         try:
-            self.connection = mysql.connector.connect( DB_CONFIG )
+            self.connection = mysql.connector.connect( **DB_CONFIG )
             
             if self.connection.is_connected():
                 self.cursor = self.connection.cursor(dictionary=True)

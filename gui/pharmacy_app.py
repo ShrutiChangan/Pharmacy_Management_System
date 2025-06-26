@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from tkcalendar import DateEntry
 import datetime
-from main import start_main_app
+
 from gui.bill_preview_window import BillPreviewWindow
 
 class PharmacyApp:
@@ -166,6 +166,7 @@ class PharmacyApp:
         footer_label.pack(side="right", padx=10, pady=3)
 
     def logout(self):
+        from app_controller import start_main_app
         self.db.close()
         self.root.destroy()
         root = tk.Tk()

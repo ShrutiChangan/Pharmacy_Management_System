@@ -3,7 +3,6 @@ from tkinter import messagebox
 from tkinter import ttk, messagebox, font, scrolledtext
 from database.connection import DatabaseConnection
 from repositories.user_repository import UserRepository
-from gui.pharmacy_app import PharmacyApp 
 
 class LoginPage:
     def __init__(self, root, on_login_success):
@@ -55,6 +54,7 @@ class LoginPage:
         self.setup_login_ui()
 
     def setup_login_ui(self):
+        
         # Create header with gradient effect
         self.header_frame = tk.Frame(self.root, bg=self.primary_color, height=70)
         self.header_frame.pack(fill="x")
